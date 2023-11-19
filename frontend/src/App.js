@@ -12,6 +12,7 @@ import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { createWeb3Modal } from '@web3modal/wagmi/react'
 import { jsonRpcProvider } from '@wagmi/core/providers/jsonRpc'
+import Getplayers from './components/Getplayers/Getplayers';
 
 const chains = [arbitrum, mainnet, polygon, goerli, chiliz];
 const projectId = '59198889d7df78b39ea70d871d0ec131';
@@ -59,6 +60,7 @@ function App() {
         <Nav/>
         <Fetch/>
         <Pool />
+        <Getplayers/>
       </WagmiConfig>
     </>
   );
