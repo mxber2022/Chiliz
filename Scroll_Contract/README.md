@@ -12,7 +12,7 @@ npx hardhat run scripts/deploy.js --network scroll-testnet
 Try running the following tasks to verify contract:
 
 ```shell
-npx hardhat verify --network scroll-testnet 
+npx hardhat verify --network scroll-testnet 0xb5dD8f6770593bC05Dc5B336F809695Ee481c991
 
 ```
 

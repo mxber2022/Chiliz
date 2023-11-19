@@ -2,10 +2,12 @@
  
 Deployed and verified smart contract address Mainnet: 
 
-Chiliz - 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98 <br />
+Chiliz Mainnet - 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98 <br />
 Arbitrum Stylus - 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98 <br />
 Gnosis - 0xF1516575dC6d79486AD78E8c596542416F333044 <br />
-Neon -  <br />
+
+Gnosis TweetLink <br />
+https://twitter.com/track_hype/status/1726115954604617889 <br />
 
 # Disclaimer
 This project is just built for fun. Please inform yourself before gambling.
