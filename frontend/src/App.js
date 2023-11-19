@@ -47,7 +47,7 @@ const wagmiConfig = createConfig({
   publicClient
 })
 
-createWeb3Modal({ wagmiConfig, projectId, chains })
+createWeb3Modal({ wagmiConfig, projectId, chains , themeMode: 'dark'})
 
 function App() {
   return (

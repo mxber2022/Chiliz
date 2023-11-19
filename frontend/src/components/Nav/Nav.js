@@ -4,8 +4,13 @@ function Nav () {
     return(
         <>
             <nav className="nav">
+
                 <div>
-                 <w3m-button />
+                    <h1> ChilizJackpotPool </h1>
+                </div>
+
+                <div>
+                    <w3m-button className='hello' />
                 </div>              
             </nav>
         </>
