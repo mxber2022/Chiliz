@@ -1,10 +1,10 @@
 import './App.css';
 import Nav from './components/Nav/Nav';
 import Fetch from './components/FetchTokenBound/Fetch';
-
+import Pool from './components/Pool/Pool';
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { arbitrum, gnosisChiado, goerli, mainnet, polygon } from 'wagmi/chains';
+import { arbitrum, gnosisChiado, goerli, mainnet, polygon, chiliz } from 'wagmi/chains';
 import { walletConnectProvider, EIP6963Connector } from '@web3modal/wagmi'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect';
 import { publicProvider } from 'wagmi/providers/public'
@@ -13,7 +13,7 @@ import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { createWeb3Modal } from '@web3modal/wagmi/react'
 import { jsonRpcProvider } from '@wagmi/core/providers/jsonRpc'
 
-const chains = [arbitrum, mainnet, polygon, goerli];
+const chains = [arbitrum, mainnet, polygon, goerli, chiliz];
 const projectId = '59198889d7df78b39ea70d871d0ec131';
 
 const { publicClient } = configureChains(
@@ -47,7 +47,10 @@ const wagmiConfig = createConfig({
   publicClient
 })
 
-createWeb3Modal({ wagmiConfig, projectId, chains , themeMode: 'dark'})
+createWeb3Modal({ wagmiConfig, projectId, chains , themeVariables: {
+  '--w3m-accent': '#2c4d4e',
+  'themeMode': 'dark'
+}})
 
 function App() {
   return (
@@ -55,6 +58,7 @@ function App() {
       <WagmiConfig config={wagmiConfig}>
         <Nav/>
         <Fetch/>
+        <Pool />
       </WagmiConfig>
     </>
   );
