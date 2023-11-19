@@ -1,0 +1,22 @@
+.get-players-container.success {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .pick-winner-button {
+    background-color: #FFD700;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pick-winner-button:hover {
+    background-color: #FFA500;
+  }
+  
