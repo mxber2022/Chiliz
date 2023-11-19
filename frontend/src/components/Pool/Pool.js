@@ -1,5 +1,5 @@
 // src/Pool.js
-import React from 'react';
+import React, { useState } from 'react';
 import { abi } from "./abi";
 import { useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { parseEther } from 'viem';
@@ -16,7 +16,15 @@ function Pool() {
     value: parseEther("0.1"),
   });
 
-  const { data, isLoading, isSuccess, write } = useContractWrite(config);
+  const { data, isLoading, isSuccess, isError, write } = useContractWrite(config);
+
+  const [isTransactionPending, setTransactionPending] = useState(false);
+
+  const handleButtonClick = async () => {
+    setTransactionPending(true);
+    await write?.();
+    setTransactionPending(false);
+  };
 
   return (
     <div className="pool-container">
@@ -24,8 +32,12 @@ function Pool() {
       <p className="pool-description">
         Join the excitement by adding your spice to the ChilizJackpotPool. Place a bet, embrace the thrill, and who knows, you might be the next big winner! 🚀
       </p>
-      <button className="pool-button" disabled={!write} onClick={() => write?.()}>
-        💰 Add To Pool (0.1 CHZ)
+      <button
+        className={`pool-button ${isTransactionPending ? 'pending' : isSuccess ? 'success' : ''}`}
+        disabled={isTransactionPending}
+        onClick={handleButtonClick}
+      >
+        {isTransactionPending ? 'Processing...' : isSuccess ? '🎉 Transaction Successful!' : '💰 Add To Pool'}
       </button>
     </div>
   );
