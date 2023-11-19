@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/maharajababu/Documents/Projects/Chiliz/Scroll_Contract/contracts/PoolBetting.sol": {
+      "lastModificationDate": 1700368907728,
+      "contentHash": "bce8861cc41f8e091fbc9476cb99b6ad",
+      "sourceName": "contracts/PoolBetting.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PoolBetting"
+      ]
+    }
+  }
+}
