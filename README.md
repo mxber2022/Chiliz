@@ -4,6 +4,9 @@ Deployed and verified smart contract address Mainnet:
 
 0xAaa906c8C2720c50B69a5Ba54B44253Ea1001C98
 
+# Disclaimer
+This project is just built for fun. Please inform yourself before gambling.
+
 # ChilizJackpotPool 🌶️
 
 Welcome to ChilizJackpotPool - A Spicy Decentralized Pool Betting Platform!

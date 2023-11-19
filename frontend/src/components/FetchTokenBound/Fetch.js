@@ -16,7 +16,7 @@ function Fetch () {
                 <h3 style={{ color: '#F76C6C' }}>How it Works</h3>
                 <ol style={{ fontSize: '1.1rem', color: '#333' }}>
                     <li>🔗 Connect your Chiliz-compatible wallet.</li>
-                    <li>💰 Enter the pool by placing a bet of at least 0.01 ether.</li>
+                    <li>💰 Enter the pool by placing a bet of at least 0.1 CHZ.</li>
                     <li>🎲 Wait for the manager to roll the spicy dice and pick the winner!</li>
                     <li>🌈 If you win, the entire pot will be a spicy treat for your wallet!</li>
                 </ol>
